@@ -53,7 +53,6 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
 endif
 
 call plug#begin()
-Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' } " カラースキーム
 Plug 'markonm/traces.vim'    " 置換時にわかりやすく
 Plug 'cohama/lexima.vim'     " 閉じカッコの補完系
 Plug 'sheerun/vim-polyglot'  " 言語パック
@@ -61,10 +60,20 @@ Plug 'dense-analysis/ale'    " Linter
 Plug 'ervandew/supertab'     " Tabで補完
 Plug 'preservim/nerdtree'    " Tree Explorer
 Plug 'joshdick/onedark.vim'  " カラースキーム
+Plug 'rakr/vim-one'          " カラースキーム
+Plug 'neoclide/coc.nvim', {'branch': 'release'} " LSP support
+Plug 'Yggdroot/indentLine'   " インデントを可視化
+Plug 'vim-airline/vim-airline' " statusline
 call plug#end()
 
 syntax on
-colorscheme onedark
+
+" ColorScheme
+colorscheme one
+set background=light
+
+" Vim Airline
+let g:airline_theme='one'
 
 " NERDTree
 nnoremap <F3> :NERDTree<CR>
