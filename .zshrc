@@ -66,7 +66,7 @@ esac
 alias ll='ls -hl'
 alias la='ll -A'
 alias grep='grep --color'
-
+alias aws='aws --profile mysso'
 
 
 

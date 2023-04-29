@@ -10,3 +10,5 @@
 	log-all = log --oneline --decorate --graph --all
 [init]
 	defaultBranch = main
+[grep]
+	lineNumber = true
