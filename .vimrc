@@ -61,7 +61,7 @@ Plug 'ervandew/supertab'     " Tabで補完
 Plug 'preservim/nerdtree'    " Tree Explorer
 Plug 'joshdick/onedark.vim'  " カラースキーム
 Plug 'rakr/vim-one'          " カラースキーム
-Plug 'neoclide/coc.nvim', {'branch': 'release'} " LSP support
+" Plug 'neoclide/coc.nvim', {'branch': 'release'} " LSP support
 Plug 'Yggdroot/indentLine'   " インデントを可視化
 Plug 'vim-airline/vim-airline' " statusline
 call plug#end()
@@ -70,7 +70,7 @@ syntax on
 
 " ColorScheme
 colorscheme one
-set background=light
+set background=dark
 
 " Vim Airline
 let g:airline_theme='one'
