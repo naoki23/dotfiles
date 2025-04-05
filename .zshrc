@@ -73,9 +73,6 @@ alias aws='aws --profile mysso'
 # =====================
 # Environment
 # =====================
-# export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
-export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
-export LESS=" -R "
 export GOPATH=~/go
 # export PATH="$PATH:$HOME/.local/bin"
 # export PATH="$PATH:$HOME/.local/npm_global/bin"
