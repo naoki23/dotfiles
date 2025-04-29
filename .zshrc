@@ -18,7 +18,7 @@ setopt autocd beep extendedglob nomatch notify
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/naoki/.zshrc'
+zstyle :compinstall filename "$HOME/.zshrc"
 # End of lines added by compinstall
 
 
@@ -55,14 +55,7 @@ zstyle ':completion:*' completer _complete _approximate _prefix # 近似補完
 # =====================
 # Alias
 # =====================
-case ${OSTYPE} in
-    linux*)
-        alias ls='ls -F --color=auto --group-directories-first'
-        ;;
-    darwin*)
-        alias ls='ls -FG'
-        ;;
-esac
+alias ls='ls -F --color=auto --group-directories-first'
 alias ll='ls -hl'
 alias la='ll -A'
 alias grep='grep --color'
@@ -113,3 +106,5 @@ fi
 # =====================
 # Command
 # =====================
+
+. "$HOME/.local/bin/env"
